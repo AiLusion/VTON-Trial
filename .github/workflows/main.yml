@@ -14,6 +14,8 @@ jobs:
         with:
           fetch-depth: 0
           lfs: True
+      - name: Git Pull
+        run: git lfs pull  
       - name: LFS Install
         run: git lfs install
       - name: LFS Track
